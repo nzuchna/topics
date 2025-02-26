@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dagster_ml",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "dagster",
+            "args": [
+                "dev",
+                "-m",
+                "dagster_ml"
+            ],
+            "justMyCode": false,
+            "subProcess": true,
+            "cwd": "${workspaceFolder}/code-locations/dagster-ml",
+        },
+        {
+            "name": "audience intuition",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": ["run", "code-locations/dagster-ml/apps/home.py"],
+            "justMyCode": false,
+        },
+    ]
+}

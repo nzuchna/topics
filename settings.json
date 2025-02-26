@@ -1,0 +1,24 @@
+{
+    "python.analysis.extraPaths": [
+        "/Users/nzuchna/Documents/GitHub/data-platform/libs/dagster-models/.venv/lib/python3.12/site-packages",
+        "./code-locations/dagster-ml/dagster_ml/apps"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "terminal.integrated.cwd": "nzuchna/topics",
+    "ruff.configuration": "/Users/franzuhlig/Documents/GitHub/data-platform/code-locations/dagster-engineering/pyproject.toml",
+    "pylint.args": [
+        "--max-line-length=120",
+        "--disable=C0111,C0301,C0330, C0326, C0414"
+    ],
+    "python.formatting.provider": "black",
+    
+    "black-formatter.args": [
+        "--line-length",
+        "100"
+    ],
+    "makefile.configureOnOpen": false,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "file:/**/*.csv": "jupyter-data-wrangler"
+    }
+}
